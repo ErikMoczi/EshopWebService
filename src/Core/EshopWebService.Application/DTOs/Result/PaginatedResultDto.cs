@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EshopWebService.Application.DTOs.Result
 {
-    public class PaginatedResultDto<T> : ResultDto<List<T>>, IPaginatedResultDto<List<T>>
+    public class PaginatedResultDto<T> : ResultDto<List<T>>, IPaginatedResultDto<T>
     {
         public int Page { get; set; }
         public int TotalPages { get; set; }

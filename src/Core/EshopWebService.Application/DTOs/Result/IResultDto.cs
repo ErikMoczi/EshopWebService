@@ -10,13 +10,4 @@ namespace EshopWebService.Application.DTOs.Result
     {
         T Data { get; }
     }
-
-    public interface IPaginatedResultDto<out T> : IResultDto<T>
-    {
-        int Page { get; }
-        int TotalPages { get; }
-        long TotalCount { get; }
-        bool HasPreviousPage => Page > 1;
-        bool HasNextPage => Page < TotalPages;
-    }
 }
