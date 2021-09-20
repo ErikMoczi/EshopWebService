@@ -1,7 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Ardalis.GuardClauses;
 using EshopWebService.Application.Interfaces.Repositories;
 using EshopWebService.Intrastructure.DbContexts;
 using Microsoft.EntityFrameworkCore;
@@ -14,30 +14,14 @@ namespace EshopWebService.Intrastructure.Repositories
 
         public Repository(ApplicationDbContext dbContext)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _dbContext = Guard.Against.Null(dbContext, nameof(dbContext));
         }
-
-        public IQueryable<T> AsQueryable => _dbContext.Set<T>();
 
         private DbSet<T> DbSet => _dbContext.Set<T>();
 
-        public async Task<T> GetByIdAsync(int id)
+        public Task<TResult> AsQueryableAsync<TResult>(Func<IQueryable<T>, Task<TResult>> action)
         {
-            return await DbSet.FindAsync(id);
-        }
-
-        public async Task<List<T>> GetAllAsync()
-        {
-            return await DbSet.ToListAsync();
-        }
-
-        public async Task<List<T>> GetAllAsync(int pageNumber, int pageSize)
-        {
-            return await DbSet
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
-                .AsNoTracking()
-                .ToListAsync();
+            return action(DbSet);
         }
 
         public async Task<T> CreateAsync(T entity)

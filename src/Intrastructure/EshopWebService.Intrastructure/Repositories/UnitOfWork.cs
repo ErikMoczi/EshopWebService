@@ -1,6 +1,6 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Ardalis.GuardClauses;
 using EshopWebService.Application.Interfaces.Repositories;
 using EshopWebService.Intrastructure.DbContexts;
 
@@ -12,7 +12,7 @@ namespace EshopWebService.Intrastructure.Repositories
 
         public UnitOfWork(ApplicationDbContext dbContext)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _dbContext = Guard.Against.Null(dbContext, nameof(dbContext));
         }
 
         public async Task<int> Commit(CancellationToken cancellationToken)

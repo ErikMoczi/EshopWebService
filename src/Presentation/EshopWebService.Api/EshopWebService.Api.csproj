@@ -5,8 +5,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Core\EshopWebService.Application\EshopWebService.Application.csproj" />
-      <ProjectReference Include="..\..\Intrastructure\EshopWebService.Intrastructure\EshopWebService.Intrastructure.csproj" />
+        <ProjectReference Include="..\..\Core\EshopWebService.Application\EshopWebService.Application.csproj" />
+        <ProjectReference Include="..\..\Intrastructure\EshopWebService.Intrastructure\EshopWebService.Intrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
     </ItemGroup>
 
 </Project>

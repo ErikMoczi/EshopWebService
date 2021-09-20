@@ -5,16 +5,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Core\EshopWebService.Application\EshopWebService.Application.csproj" />
-      <ProjectReference Include="..\..\Core\EshopWebService.Domain\EshopWebService.Domain.csproj" />
+        <ProjectReference Include="..\..\Core\EshopWebService.Application\EshopWebService.Application.csproj"/>
+        <ProjectReference Include="..\..\Core\EshopWebService.Domain\EshopWebService.Domain.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+            <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\5.0.10\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
 </Project>

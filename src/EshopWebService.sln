@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intrastructure", "Intrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopWebService.Intrastructure", "Intrastructure\EshopWebService.Intrastructure\EshopWebService.Intrastructure.csproj", "{A5607E82-CC74-4E5F-BC55-C4B7B4834835}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AB1C758B-E16B-4DE8-A5CB-D2C5D88A7BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopWebService.IntegrationTests", "Tests\EshopWebService.IntegrationTests\EshopWebService.IntegrationTests.csproj", "{332A72D6-5DB7-438D-8CEB-3C7D848AA224}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,7 @@ Global
 		{A1DA4471-5940-4AD4-A396-CB795D60614E} = {8D2D2977-B9AB-40E4-9EE7-565AE2A4EDF3}
 		{541CB5CE-4496-4417-8356-0C241EEDF74B} = {8D2D2977-B9AB-40E4-9EE7-565AE2A4EDF3}
 		{A5607E82-CC74-4E5F-BC55-C4B7B4834835} = {6B7CA393-972A-4D89-8620-B5643C6818D6}
+		{332A72D6-5DB7-438D-8CEB-3C7D848AA224} = {AB1C758B-E16B-4DE8-A5CB-D2C5D88A7BB2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{63171872-36FE-4351-9E5B-91C0A5C8DA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +47,9 @@ Global
 		{A5607E82-CC74-4E5F-BC55-C4B7B4834835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5607E82-CC74-4E5F-BC55-C4B7B4834835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5607E82-CC74-4E5F-BC55-C4B7B4834835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332A72D6-5DB7-438D-8CEB-3C7D848AA224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332A72D6-5DB7-438D-8CEB-3C7D848AA224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332A72D6-5DB7-438D-8CEB-3C7D848AA224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332A72D6-5DB7-438D-8CEB-3C7D848AA224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
