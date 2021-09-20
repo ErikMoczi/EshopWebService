@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;

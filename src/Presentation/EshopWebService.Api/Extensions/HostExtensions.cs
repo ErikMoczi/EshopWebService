@@ -1,5 +1,5 @@
 using System;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

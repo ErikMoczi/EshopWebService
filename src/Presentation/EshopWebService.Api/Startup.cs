@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using EshopWebService.Api.Extensions;
 using EshopWebService.Application.Extensions;
-using EshopWebService.Intrastructure.Extensions;
+using EshopWebService.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;

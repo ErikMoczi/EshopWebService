@@ -9,7 +9,7 @@ using EshopWebService.Application.Handlers.Features.Product.Queries.GetById;
 using EshopWebService.IntegrationTests.Cases.Abstractions;
 using EshopWebService.IntegrationTests.Common.Helpers;
 using EshopWebService.IntegrationTests.Core.StartUp;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

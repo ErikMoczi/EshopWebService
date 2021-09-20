@@ -1,10 +1,10 @@
 using EshopWebService.Application.Interfaces.Repositories;
-using EshopWebService.Intrastructure.DbContexts;
-using EshopWebService.Intrastructure.Repositories;
+using EshopWebService.Infrastructure.DbContexts;
+using EshopWebService.Infrastructure.Repositories;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EshopWebService.Intrastructure.Extensions
+namespace EshopWebService.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtensions
     {

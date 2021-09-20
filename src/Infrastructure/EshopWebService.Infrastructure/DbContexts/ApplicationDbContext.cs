@@ -1,8 +1,8 @@
 using EshopWebService.Domain.Entities;
-using EshopWebService.Intrastructure.Configuration;
+using EshopWebService.Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace EshopWebService.Intrastructure.DbContexts
+namespace EshopWebService.Infrastructure.DbContexts
 {
     public class ApplicationDbContext : DbContext
     {

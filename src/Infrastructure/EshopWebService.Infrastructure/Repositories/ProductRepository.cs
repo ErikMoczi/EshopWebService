@@ -8,7 +8,7 @@ using EshopWebService.Application.Interfaces.Repositories;
 using EshopWebService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EshopWebService.Intrastructure.Repositories
+namespace EshopWebService.Infrastructure.Repositories
 {
     public class ProductRepository : IProductRepository
     {

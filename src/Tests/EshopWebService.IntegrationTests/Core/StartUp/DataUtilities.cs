@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using EshopWebService.Domain.Entities;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 
 namespace EshopWebService.IntegrationTests.Core.StartUp
 {

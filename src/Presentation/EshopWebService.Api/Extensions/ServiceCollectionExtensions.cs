@@ -1,5 +1,5 @@
 using EshopWebService.Api.Configurations;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

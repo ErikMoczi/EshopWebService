@@ -5,11 +5,11 @@ using EshopWebService.Application.DTOs.Result;
 using EshopWebService.Application.Factories;
 using EshopWebService.Application.Interfaces.Repositories;
 using EshopWebService.Domain.Entities;
-using EshopWebService.Intrastructure.Constatnts;
+using EshopWebService.Infrastructure.Constatnts;
 using Microsoft.Extensions.Caching.Distributed;
-using DistributedCacheExtensions = EshopWebService.Intrastructure.Extensions.DistributedCacheExtensions;
+using DistributedCacheExtensions = EshopWebService.Infrastructure.Extensions.DistributedCacheExtensions;
 
-namespace EshopWebService.Intrastructure.Repositories
+namespace EshopWebService.Infrastructure.Repositories
 {
     public class ProductCachedRepository : IProductRepository
     {

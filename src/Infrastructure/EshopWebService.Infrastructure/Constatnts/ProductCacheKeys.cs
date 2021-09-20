@@ -1,4 +1,4 @@
-namespace EshopWebService.Intrastructure.Constatnts
+namespace EshopWebService.Infrastructure.Constatnts
 {
     public static class ProductCacheKeys
     {

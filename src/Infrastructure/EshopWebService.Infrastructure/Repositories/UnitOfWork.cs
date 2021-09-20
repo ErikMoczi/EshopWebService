@@ -2,9 +2,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.GuardClauses;
 using EshopWebService.Application.Interfaces.Repositories;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 
-namespace EshopWebService.Intrastructure.Repositories
+namespace EshopWebService.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

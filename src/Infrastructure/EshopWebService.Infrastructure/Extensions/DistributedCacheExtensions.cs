@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Ardalis.GuardClauses;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace EshopWebService.Intrastructure.Extensions
+namespace EshopWebService.Infrastructure.Extensions
 {
     public static class DistributedCacheExtensions
     {

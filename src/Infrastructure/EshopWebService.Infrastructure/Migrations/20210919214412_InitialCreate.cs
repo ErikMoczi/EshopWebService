@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EshopWebService.Intrastructure.Migrations
+namespace EshopWebService.Infrastructure.Migrations
 {
     public partial class InitialCreate : Migration
     {

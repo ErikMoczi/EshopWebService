@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Ardalis.GuardClauses;
 using EshopWebService.Application.Interfaces.Repositories;
-using EshopWebService.Intrastructure.DbContexts;
+using EshopWebService.Infrastructure.DbContexts;
 using Microsoft.EntityFrameworkCore;
 
-namespace EshopWebService.Intrastructure.Repositories
+namespace EshopWebService.Infrastructure.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {

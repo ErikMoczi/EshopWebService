@@ -6,7 +6,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Core\EshopWebService.Application\EshopWebService.Application.csproj" />
-        <ProjectReference Include="..\..\Intrastructure\EshopWebService.Intrastructure\EshopWebService.Intrastructure.csproj" />
+        <ProjectReference Include="..\..\Infrastructure\EshopWebService.Infrastructure\EshopWebService.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
