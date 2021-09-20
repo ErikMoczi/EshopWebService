@@ -11,18 +11,19 @@ namespace EshopWebService.Api.Extensions
     {
         public static IHost MigrateDatabase(this IHost host)
         {
-            using var scope = host.Services.CreateScope();
-            using var appContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            using var serviceScope = host.Services.CreateScope();
+            using var applicationDbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-            var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
+            var loggerFactory = serviceScope.ServiceProvider.GetRequiredService<ILoggerFactory>();
             var logger = loggerFactory.CreateLogger("app");
+
+            applicationDbContext.Database.EnsureCreated();
 
             try
             {
-                appContext.Database.EnsureCreated();
-                if (!appContext.Database.IsInMemory())
+                if (!applicationDbContext.Database.IsInMemory())
                 {
-                    appContext.Database.Migrate();
+                    applicationDbContext.Database.Migrate();
                 }
 
                 logger.LogInformation("Finished Seeding Default Data");
