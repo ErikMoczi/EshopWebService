@@ -29,7 +29,6 @@ namespace EshopWebService.Intrastructure.Repositories
             if (product == null)
             {
                 product = await _productRepository.GetByIdAsync(productId);
-
                 if (product == null)
                 {
                     throw ApiExceptionFactory.Throw("Product Not Found.");

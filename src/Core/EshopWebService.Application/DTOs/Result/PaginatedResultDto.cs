@@ -9,6 +9,10 @@ namespace EshopWebService.Application.DTOs.Result
         public int TotalPages { get; set; }
         public long TotalCount { get; set; }
 
+        public PaginatedResultDto()
+        {
+        }
+
         internal PaginatedResultDto(bool success, List<T> data = default, string message = null, long count = 0, int page = 1, int pageSize = 10)
         {
             Message = message;
